@@ -1,0 +1,22 @@
+---
+title: Writing
+description: Essays and field notes on building AI products — design, engineering, evaluation and the business around them.
+---
+<section class="page-hero container">
+  <p class="eyebrow">Writing · {{postCount}} posts</p>
+  <h1 class="display">Notes from the <em>workbench.</em></h1>
+  <p class="lede">What we’re learning while building — opinions held loosely, numbers held tightly. No growth-hacked listicles, promise.</p>
+  <div class="writing-tools">
+    <label class="search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+      <span class="sr-only">Search posts</span>
+      <input type="search" placeholder="Search posts…" data-post-search>
+    </label>
+    <a class="btn btn--ghost btn--sm" href="{{base}}feed.xml">RSS feed</a>
+  </div>
+</section>
+
+<section class="container">
+  <ul class="post-list post-list--full" data-post-list>{{postList}}</ul>
+  <p class="empty-state dim" data-empty hidden>No posts match that.</p>
+</section>
