@@ -1,0 +1,30 @@
+<div class="read-progress" aria-hidden="true"><span data-progress></span></div>
+<article class="post">
+  <header class="post-hero container container--narrow">
+    <a href="{{base}}writing/" class="back-link">← Writing</a>
+    <p class="eyebrow"><time datetime="{{isoDate}}">{{date}}</time> · {{readingTime}} min read</p>
+    <h1 class="display display--post">{{title}}</h1>
+    <p class="lede">{{summary}}</p>
+    <div class="post-byline">
+      <span class="avatar" aria-hidden="true"></span>
+      <span>By <strong>{{author}}</strong></span>
+      <ul class="tags">{{tags}}</ul>
+    </div>
+  </header>
+
+  <div class="container post-layout">
+    {{toc}}
+    <div class="prose prose--post">
+{{html}}
+    </div>
+  </div>
+
+  <footer class="container container--narrow post-footer">
+    <div class="post-share">
+      <span class="eyebrow">Enjoyed this?</span>
+      <a href="{{base}}feed.xml">Subscribe via RSS</a>
+      <button type="button" class="link-btn" data-copy-link>Copy link</button>
+    </div>
+    <nav class="pager" aria-label="More posts">{{pager}}</nav>
+  </footer>
+</article>

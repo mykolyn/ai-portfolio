@@ -1,0 +1,17 @@
+---
+title: Work
+description: Selected case studies — AI products, agents, retrieval systems and interfaces we've designed and shipped.
+---
+<section class="page-hero container">
+  <p class="eyebrow">Work · {{workCount}} case studies</p>
+  <h1 class="display">Things we’ve <em>shipped.</em></h1>
+  <p class="lede">A selection of products, prototypes and systems. Each case study covers the problem, what we built, how we measured it, and what we’d do differently.</p>
+</section>
+
+<section class="container">
+  <div class="filters" role="toolbar" aria-label="Filter projects" data-filters>{{workFilters}}</div>
+  <div class="work-grid" data-work-grid>
+    {{workList}}
+  </div>
+  <p class="empty-state dim" data-empty hidden>Nothing tagged that yet.</p>
+</section>

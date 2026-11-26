@@ -1,0 +1,38 @@
+<article class="case">
+  <header class="case-hero container">
+    <a href="{{base}}work/" class="back-link">← All work</a>
+    <p class="eyebrow reveal">{{client}} · {{year}}</p>
+    <h1 class="display reveal">{{title}}</h1>
+    <p class="lede reveal">{{summary}}</p>
+    <dl class="case-facts reveal">
+      <div><dt>Client</dt><dd>{{client}}</dd></div>
+      <div><dt>Role</dt><dd>{{role}}</dd></div>
+      <div><dt>Timeline</dt><dd>{{duration}}</dd></div>
+      <div><dt>Year</dt><dd>{{year}}</dd></div>
+    </dl>
+  </header>
+
+  <div class="container case-cover reveal">{{cover}}</div>
+
+  <div class="container case-body">
+    <aside class="case-aside">
+      <div class="sticky">
+        {{metrics}}
+        <p class="eyebrow">Stack</p>
+        <ul class="tags">{{stack}}</ul>
+        <p class="eyebrow">Disciplines</p>
+        <ul class="tags">{{tags}}</ul>
+        {{link}}
+      </div>
+    </aside>
+    <div class="prose">
+{{html}}
+    </div>
+  </div>
+
+  <a class="next-project container" href="{{base}}work/{{nextSlug}}/">
+    <span class="eyebrow">Next project</span>
+    <span class="next-project__title">{{nextTitle}} <span aria-hidden="true">→</span></span>
+    <div class="next-project__cover">{{nextCover}}</div>
+  </a>
+</article>

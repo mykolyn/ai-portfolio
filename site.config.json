@@ -1,0 +1,20 @@
+{
+  "name": "Mykolyn",
+  "tagline": "An independent AI product studio",
+  "description": "We design and build AI products that people actually want to use — from research prototype to production.",
+  "url": "https://mykolyn.github.io/ai-portfolio",
+  "email": "hello@example.com",
+  "location": "Remote · Worldwide",
+  "availability": "Booking projects for Q1 2027",
+  "socials": [
+    { "label": "GitHub", "href": "https://github.com/mykolyn" },
+    { "label": "LinkedIn", "href": "https://www.linkedin.com/" },
+    { "label": "X / Twitter", "href": "https://x.com/" }
+  ],
+  "nav": [
+    { "label": "Work", "href": "work/" },
+    { "label": "Writing", "href": "writing/" },
+    { "label": "About", "href": "about/" },
+    { "label": "Hire us", "href": "hire/" }
+  ]
+}

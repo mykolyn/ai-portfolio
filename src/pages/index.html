@@ -1,0 +1,112 @@
+---
+bodyClass: page-index is-immersive
+scripts: [home.js]
+---
+<section class="hero" data-hero>
+  <canvas class="hero__canvas" data-shader aria-hidden="true"></canvas>
+  <div class="hero__veil" aria-hidden="true"></div>
+  <div class="container hero__inner">
+    <p class="eyebrow hero__eyebrow" data-intro style="--d:0"><span class="status-dot" aria-hidden="true"></span>{{availability}}</p>
+    <h1 class="hero__title" aria-label="We build intelligent things people love.">
+      <span class="line" aria-hidden="true"><span class="line__inner" style="--d:1">We build</span></span>
+      <span class="line" aria-hidden="true"><span class="line__inner" style="--d:2"><em>intelligent</em> things</span></span>
+      <span class="line" aria-hidden="true"><span class="line__inner" style="--d:3">people <span class="hero__swap" data-swap="love.|trust.|rely on.|come back to.">love.</span></span></span>
+    </h1>
+    <div class="hero__foot" data-intro style="--d:5">
+      <p class="hero__lede">{{description}}</p>
+      <div class="hero__actions">
+        <a class="btn btn--light" href="{{base}}work/" data-magnetic>See the work <span aria-hidden="true">→</span></a>
+        <a class="btn btn--ghost" href="{{base}}hire/" data-magnetic>Start a project</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero__scroll mono" aria-hidden="true"><span></span>Scroll</div>
+</section>
+
+<section class="marquee" aria-label="What we do">
+  <div class="marquee__track">
+    <div class="marquee__group">
+      <span>LLM Products</span><i>✦</i><span>Agents &amp; Tooling</span><i>✦</i><span>Retrieval &amp; Search</span><i>✦</i><span>Evaluation</span><i>✦</i><span>Interface Design</span><i>✦</i><span>Prototyping</span><i>✦</i>
+    </div>
+    <div class="marquee__group" aria-hidden="true">
+      <span>LLM Products</span><i>✦</i><span>Agents &amp; Tooling</span><i>✦</i><span>Retrieval &amp; Search</span><i>✦</i><span>Evaluation</span><i>✦</i><span>Interface Design</span><i>✦</i><span>Prototyping</span><i>✦</i>
+    </div>
+  </div>
+</section>
+
+<section class="manifesto container" aria-label="Our approach">
+  <p class="eyebrow">(01) — Approach</p>
+  <p class="manifesto__text" data-scrub-words>Most AI demos dazzle for a minute and die in a drawer. We make the other kind — products with <em>taste</em>, <em>rigor</em>, and a real reason to exist. Small team, senior hands, no hand-waving.</p>
+</section>
+
+<section class="showcase" data-showcase aria-label="Selected work">
+  <div class="showcase__sticky">
+    <div class="container showcase__head">
+      <p class="eyebrow">(02) — Selected work</p>
+      <a href="{{base}}work/" class="link-arrow">All {{workCount}} projects →</a>
+    </div>
+    <div class="showcase__track" data-showcase-track>
+      {{showcase}}
+      <a class="showcase__item showcase__item--end" href="{{base}}work/">
+        <span class="showcase__end-text">See<br>everything<br><span aria-hidden="true">→</span></span>
+      </a>
+    </div>
+    <div class="container showcase__progress" aria-hidden="true"><span data-showcase-progress></span></div>
+  </div>
+</section>
+
+<section class="capabilities container" aria-labelledby="cap-title">
+  <div class="section-head">
+    <p class="eyebrow">(03) — Capabilities</p>
+    <h2 id="cap-title" class="h2">From a hunch on a napkin<br>to a product in the wild.</h2>
+  </div>
+  <div class="cap-grid" data-spotlight>
+    <article class="cap-card reveal">
+      <span class="cap-card__num mono">01</span>
+      <svg class="cap-card__icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="18"/><circle cx="24" cy="24" r="9"/><circle cx="24" cy="24" r="2" class="fill"/></svg>
+      <h3>Strategy &amp; discovery</h3>
+      <p>Where AI genuinely moves the needle — and where it’s a costly distraction. Opportunity mapping, feasibility spikes, honest roadmaps.</p>
+    </article>
+    <article class="cap-card reveal">
+      <span class="cap-card__num mono">02</span>
+      <svg class="cap-card__icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="7" y="9" width="34" height="30" rx="4"/><path d="M7 17h34M15 25h12M15 31h18"/></svg>
+      <h3>Product &amp; interface design</h3>
+      <p>Interfaces for probabilistic systems: streaming, uncertainty, correction, trust. Designed in code, tested with real users.</p>
+    </article>
+    <article class="cap-card reveal">
+      <span class="cap-card__num mono">03</span>
+      <svg class="cap-card__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 34l8-8-8-8M22 36h16"/></svg>
+      <h3>AI engineering</h3>
+      <p>Agents, retrieval, tool use, fine-tuning when it’s warranted. Typed, observable, and boring in all the right places.</p>
+    </article>
+    <article class="cap-card reveal">
+      <span class="cap-card__num mono">04</span>
+      <svg class="cap-card__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 38V10M8 38h32"/><path d="M14 30l7-8 6 5 11-13"/></svg>
+      <h3>Evaluation &amp; operations</h3>
+      <p>Evals before vibes. Golden sets, regression suites, cost and latency budgets — so quality is measured, not hoped for.</p>
+    </article>
+  </div>
+</section>
+
+<section class="particles" aria-label="Think, make, ship">
+  <canvas class="particles__canvas" data-particles data-words="THINK|MAKE|SHIP" aria-hidden="true"></canvas>
+  <p class="particles__hint mono dim">Move your cursor through it</p>
+</section>
+
+<section class="stats container" aria-label="By the numbers">
+  <div class="stat reveal"><span class="stat__num" data-count="38">0</span><span class="stat__label">Products shipped</span></div>
+  <div class="stat reveal"><span class="stat__num" data-count="12" data-suffix="M+">0</span><span class="stat__label">End users reached</span></div>
+  <div class="stat reveal"><span class="stat__num" data-count="9" data-suffix=" yrs">0</span><span class="stat__label">Building with ML</span></div>
+  <div class="stat reveal"><span class="stat__num" data-count="100" data-suffix="%">0</span><span class="stat__label">Senior team</span></div>
+</section>
+
+<section class="home-writing container" aria-labelledby="writing-title">
+  <div class="section-head section-head--row">
+    <div>
+      <p class="eyebrow">(04) — Writing</p>
+      <h2 id="writing-title" class="h2">Notes from the workbench.</h2>
+    </div>
+    <a href="{{base}}writing/" class="link-arrow">All posts →</a>
+  </div>
+  <ul class="post-list">{{latestPosts}}</ul>
+</section>
