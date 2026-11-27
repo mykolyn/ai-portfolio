@@ -21,7 +21,7 @@ Fieldnote's research team had 14,000 hours of interview transcripts and a search
 
 ## Approach
 
-We started with the evaluation, not the embedding model. Researchers wrote 300 real questions they'd asked in the past year, and we labelled which passages answered them. That gave us a benchmark to make every decision against.
+I started with the evaluation, not the embedding model. Researchers wrote 300 real questions they'd asked in the past year, and I labelled which passages answered them. That gave me a benchmark to make every decision against.
 
 From there, the retrieval stack came together quickly:
 
@@ -33,7 +33,7 @@ From there, the retrieval stack came together quickly:
 
 ## Interface
 
-Answers stream in with numbered citations; hovering a citation previews the exact transcript moment, and one click plays the audio from that timestamp. Researchers told us that last detail mattered more than any accuracy improvement — it's how they build trust in the result.
+Answers stream in with numbered citations; hovering a citation previews the exact transcript moment, and one click plays the audio from that timestamp. Researchers told me that last detail mattered more than any accuracy improvement — it's how they build trust in the result.
 
 ## Outcome
 

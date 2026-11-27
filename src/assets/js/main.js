@@ -164,6 +164,12 @@ if (tocLinks.length) {
   map.forEach((_, id) => { const h = document.getElementById(id); if (h) tocIO.observe(h); });
 }
 
+/* ---------------------------------------------------------- print résumé */
+$$("[data-print]").forEach((btn) => btn.addEventListener("click", () => {
+  $$(".reveal").forEach((el) => el.classList.add("is-in"));
+  window.print();
+}));
+
 /* ---------------------------------------------------------- copy link */
 $$("[data-copy-link]").forEach((btn) =>
   btn.addEventListener("click", async () => {
@@ -179,17 +185,15 @@ if (form) {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     const d = new FormData(form);
-    const interests = d.getAll("interest").join(", ") || "—";
     const body = [
       `Name: ${d.get("name")}`,
       `Email: ${d.get("email")}`,
       `Company: ${d.get("company") || "—"}`,
-      `Budget: ${d.get("budget") || "—"}`,
-      `Interested in: ${interests}`,
+      `About: ${d.get("reason") || "—"}`,
       "",
       d.get("message"),
     ].join("\n");
-    const subject = `New project — ${d.get("name")}${d.get("company") ? " @ " + d.get("company") : ""}`;
+    const subject = `${d.get("reason") || "Hello"} — ${d.get("name")}${d.get("company") ? " @ " + d.get("company") : ""}`;
     location.href = `mailto:${form.dataset.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     $("[data-form-note]").textContent = "Your email app should open now. Thanks — talk soon!";
   });

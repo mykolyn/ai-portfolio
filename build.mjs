@@ -216,7 +216,7 @@ function navHtml(current) {
   return config.nav
     .map((n) => {
       const active = current && n.href.startsWith(current);
-      return `<a href="${base}${n.href}" class="nav-link${n.href === "hire/" ? " nav-cta" : ""}"${active ? ' aria-current="page"' : ""}>${n.label}</a>`;
+      return `<a href="${base}${n.href}" class="nav-link${n.cta ? " nav-cta" : ""}"${active ? ' aria-current="page"' : ""}>${n.label}</a>`;
     })
     .join("");
 }
@@ -453,7 +453,7 @@ ${posts
 writeFile("feed.xml", rss);
 
 // Sitemap
-const urls = ["", "work/", "writing/", "about/", "hire/", ...work.map((w) => `work/${w.slug}/`), ...posts.map((p) => `writing/${p.slug}/`)];
+const urls = ["", "work/", "writing/", "about/", "resume/", "contact/", ...work.map((w) => `work/${w.slug}/`), ...posts.map((p) => `writing/${p.slug}/`)];
 writeFile(
   "sitemap.xml",
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${siteUrl}/${u}</loc></url>`).join("\n")}\n</urlset>`

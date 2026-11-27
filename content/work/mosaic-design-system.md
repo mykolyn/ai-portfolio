@@ -18,7 +18,7 @@ metrics: [5|product teams adopted, 34|production-ready components]
 
 Copperline had five teams shipping AI features and five different ideas of what a "loading" state for a language model looks like. Users noticed.
 
-## What we made
+## What I made
 
 A pattern library specifically for probabilistic interfaces: streaming text with stable layout, inline citations, regenerate and edit flows, feedback capture, and a consistent visual language for confidence and uncertainty. Every component shipped with Figma counterparts, accessibility notes and usage guidance.
 

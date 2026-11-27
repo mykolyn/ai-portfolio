@@ -1,14 +1,15 @@
 # ai-portfolio
 
-Studio site: an immersive homepage plus clean, readable pages for recruiters and clients. Zero dependencies, so it builds with plain Node.
+Personal portfolio for Michael Lin, Forward Deployed Engineer: an immersive homepage plus clean, readable pages for recruiters and hiring managers. Zero dependencies, so it builds with plain Node.
 
 | Page | Audience | What's there |
 | --- | --- | --- |
 | `/` | Everyone (the wow page) | Live WebGL aurora hero, words that light up as you scroll, a pinned horizontal project reel, particle type you can move with the cursor, counters |
-| `/work/` | Clients, recruiters | Filterable case-study grid. Each project has its own page with metrics, stack and a link to the next project |
+| `/work/` | Recruiters, hiring managers | Filterable case-study grid. Each project has its own page with metrics, stack and a link to the next project |
 | `/writing/` | Everyone | Blog with search, RSS, reading progress bar and a table of contents |
-| `/about/` | Recruiters | Short summary card (stack, availability, CV request), principles, team, experience timeline, toolbox, testimonials |
-| `/hire/` | Clients | Engagement tiers and pricing, process, FAQ, and a contact form that opens an email with everything filled in |
+| `/about/` | Recruiters | Summary card (role, stack, what I'm looking for), story, working principles, toolbox, testimonials |
+| `/resume/` | Recruiters | Experience, selected work, skills, education. **Save as PDF** prints a clean one-pager |
+| `/contact/` | Everyone | What I'm looking for, plus a contact form that opens an email with everything filled in |
 
 ## Run it
 
@@ -29,9 +30,10 @@ Requires Node 18+. Nothing to install.
   - `featured`, `order`, `link`, `draft: true`
 - **New blog post:** add `content/posts/<slug>.md` with `title`, `date: YYYY-MM-DD`, `summary`, `tags`.
   Markdown supports headings, lists, code, tables, images, links, raw HTML, `> [!pull]` pull quotes and `> [!note]` callouts.
+- **Résumé:** `src/pages/resume.html` (experience, skills, education).
 - **Page copy:** `src/pages/*.html`. **Styles:** `src/assets/css/style.css` (colors are tokens at the top).
 
-> All projects, people, clients, quotes, stats and prices are **placeholders**. Replace them with real ones before you publish.
+> The projects, customers, work history, education, quotes and stats are **placeholders**. Replace them with real ones.
 
 ## Deploy
 

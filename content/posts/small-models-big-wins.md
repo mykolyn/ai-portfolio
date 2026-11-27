@@ -5,17 +5,17 @@ summary: A field report on routing, distillation and the surprising number of ta
 tags: [Engineering, Cost]
 ---
 
-On a recent project, we cut inference cost by 83% and *improved* quality. Not by being clever with prompts — by noticing that most of the traffic didn't need a frontier model at all.
+On a recent project, I cut inference cost by 83% and *improved* quality. Not by being clever with prompts — by noticing that most of the traffic didn't need a frontier model at all.
 
 ## Look at the distribution
 
-When we logged a week of production traffic and clustered it, about 70% of requests were simple: classification, short extraction, reformatting. The remaining 30% were genuinely hard multi-step reasoning tasks.
+When I logged a week of production traffic and clustered it, about 70% of requests were simple: classification, short extraction, reformatting. The remaining 30% were genuinely hard multi-step reasoning tasks.
 
 Sending all of it to the largest model was like hiring a senior architect to label boxes.
 
 ## Route by difficulty
 
-We introduced a lightweight router: a small, fast model decides whether a request is simple or complex, with a conservative bias toward escalating when unsure.
+I introduced a lightweight router: a small, fast model decides whether a request is simple or complex, with a conservative bias toward escalating when unsure.
 
 | Tier | Share of traffic | Relative cost | Quality vs. baseline |
 | --- | --- | --- | --- |

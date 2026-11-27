@@ -21,7 +21,7 @@ Month-end close at Brightwater meant days of matching invoices to transactions b
 
 ## Agent, with guardrails
 
-We designed an agent with a deliberately narrow set of tools — read the ledger, read bank feeds, search vendor records, **propose** a match. Writing to the books always requires a human approval, enforced in the tool layer rather than the prompt.
+I designed an agent with a deliberately narrow set of tools — read the ledger, read bank feeds, search vendor records, **propose** a match. Writing to the books always requires a human approval, enforced in the tool layer rather than the prompt.
 
 Each proposed match carries a short, plain-English rationale: *"Amount matches after a 2% early-payment discount; vendor name differs by a suffix (Ltd vs Limited)."*
 

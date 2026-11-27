@@ -1,11 +1,11 @@
 {
-  "name": "Mykolyn",
-  "tagline": "An independent AI product studio",
-  "description": "We design and build AI products that people actually want to use — from research prototype to production.",
+  "name": "Michael Lin",
+  "tagline": "Forward Deployed Engineer",
+  "description": "I'm a forward deployed engineer. I embed with customers, find the problem worth solving, and ship AI systems that hold up in production.",
   "url": "https://mykolyn.github.io/ai-portfolio",
   "email": "hello@example.com",
-  "location": "Remote · Worldwide",
-  "availability": "Booking projects for Q1 2027",
+  "location": "Open to remote & on-site",
+  "availability": "Open to full-time FDE roles",
   "socials": [
     { "label": "GitHub", "href": "https://github.com/mykolyn" },
     { "label": "LinkedIn", "href": "https://www.linkedin.com/" },
@@ -15,6 +15,7 @@
     { "label": "Work", "href": "work/" },
     { "label": "Writing", "href": "writing/" },
     { "label": "About", "href": "about/" },
-    { "label": "Hire us", "href": "hire/" }
+    { "label": "Résumé", "href": "resume/" },
+    { "label": "Contact", "href": "contact/", "cta": true }
   ]
 }

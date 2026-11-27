@@ -1,10 +1,10 @@
 ---
 title: Signal Studio
-client: Internal R&D
+client: Side project
 year: 2025
-role: Design, engineering
+role: Solo — design & engineering
 duration: Ongoing
-summary: Our open-source workbench for comparing prompts, models and retrieval settings side by side — with evals built in.
+summary: My open-source workbench for comparing prompts, models and retrieval settings side by side — with evals built in.
 tags: [Evals, Open Source]
 stack: [TypeScript, React, Vite, SQLite, Any LLM API]
 palette: [#7b5cff, #ff6a3d, #ffd166]
@@ -15,9 +15,9 @@ link: https://github.com/
 metrics: [2.4k|GitHub stars, 60+|contributors]
 ---
 
-## Why we built it
+## Why I built it
 
-Every client project started the same way: a spreadsheet of prompts, a folder of outputs, and a lot of squinting. Signal Studio is the tool we wanted — run any variation against a test set, diff the outputs, score them with rubrics or graders, and keep the history.
+Every customer deployment started the same way: a spreadsheet of prompts, a folder of outputs, and a lot of squinting. Signal Studio is the tool I wanted — run any variation against a test set, diff the outputs, score them with rubrics or graders, and keep the history.
 
 ## What it does
 
