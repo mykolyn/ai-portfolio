@@ -23,7 +23,7 @@ Previous attempts at automation had failed for the same reason: they tried to *r
 
 > [!pull] The model drafts. The nurse decides. That one sentence shaped every screen.
 
-## What we built
+## What I built
 
 A copilot that sits inside the existing nursing queue. For every incoming message it:
 
@@ -35,11 +35,11 @@ Nurses accept, edit or reject each field with a single keystroke. Every correcti
 
 ## Designing for uncertainty
 
-The hardest design problem wasn't the happy path — it was what to show when the model *isn't* sure. We prototyped seven variations of confidence display and tested them with twelve nurses. Numerical scores were ignored or over-trusted. What worked was **showing the source text** behind each suggestion and an explicit "needs your eyes" state.
+The hardest design problem wasn't the happy path — it was what to show when the model *isn't* sure. I prototyped seven variations of confidence display and tested them with twelve nurses. Numerical scores were ignored or over-trusted. What worked was **showing the source text** behind each suggestion and an explicit "needs your eyes" state.
 
 ## Evals before launch
 
-Before a single nurse saw it, we built a golden set of 1,200 de-identified messages labelled by three senior nurses. Every prompt change, model swap and retrieval tweak ran against it in CI. We tracked:
+Before a single nurse saw it, I built a golden set of 1,200 de-identified messages labelled by three senior nurses. Every prompt change, model swap and retrieval tweak ran against it in CI. I tracked:
 
 - Field-level extraction accuracy
 - Urgency agreement (with a hard zero-tolerance gate on under-triage of red flags)

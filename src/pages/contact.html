@@ -1,0 +1,52 @@
+---
+title: Contact
+description: Get in touch with Michael Lin about full-time forward deployed engineering roles, collaborations, or just to say hello.
+---
+<section class="page-hero container">
+  <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>{{availability}}</p>
+  <h1 class="display">Let’s <em>talk.</em></h1>
+  <p class="lede">I’m looking for my next full-time role as a forward deployed or applied AI engineer. If you’re hiring, building something interesting, or just want to compare notes, I’d love to hear from you.</p>
+  <div class="hero__actions">
+    <a class="btn btn--primary" href="mailto:{{email}}">{{email}}</a>
+    <a class="btn btn--ghost" href="{{base}}resume/">View résumé</a>
+  </div>
+</section>
+
+<section class="container split">
+  <div class="split__label"><p class="eyebrow">What I’m looking for</p></div>
+  <dl class="looking">
+    <div class="reveal"><dt>Role</dt><dd>Forward Deployed Engineer, Applied AI Engineer, or Solutions Engineer with real engineering ownership.</dd></div>
+    <div class="reveal"><dt>Team</dt><dd>Shipping AI to real customers, with a culture of evals, writing things down and owning outcomes.</dd></div>
+    <div class="reveal"><dt>Where</dt><dd>{{location}}. Travel to customer sites is a plus, not a cost.</dd></div>
+    <div class="reveal"><dt>When</dt><dd>Available to start within a few weeks of an offer.</dd></div>
+  </dl>
+</section>
+
+<section class="container contact" id="message" aria-labelledby="contact-title">
+  <div class="contact__intro">
+    <p class="eyebrow">Send a message</p>
+    <h2 id="contact-title" class="h2">Say hello.</h2>
+    <p class="dim">I reply to everything within a couple of days. You can also find me on <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a> or <a href="https://github.com/mykolyn" target="_blank" rel="noopener">GitHub</a>.</p>
+  </div>
+  <form class="form" data-contact-form data-email="{{email}}">
+    <div class="form__row">
+      <label class="field"><span>Name</span><input name="name" required autocomplete="name"></label>
+      <label class="field"><span>Email</span><input name="email" type="email" required autocomplete="email"></label>
+    </div>
+    <label class="field"><span>Company <em class="dim">(optional)</em></span><input name="company" autocomplete="organization"></label>
+    <fieldset class="field">
+      <legend>This is about</legend>
+      <div class="choice-group">
+        <label><input type="radio" name="reason" value="A full-time role" checked><span>A full-time role</span></label>
+        <label><input type="radio" name="reason" value="A project or collaboration"><span>A project or collaboration</span></label>
+        <label><input type="radio" name="reason" value="Something I wrote"><span>Something you wrote</span></label>
+        <label><input type="radio" name="reason" value="Just saying hi"><span>Just saying hi</span></label>
+      </div>
+    </fieldset>
+    <label class="field"><span>Message</span><textarea name="message" rows="5" required placeholder="Tell me about the role, the team, or what’s on your mind."></textarea></label>
+    <div class="form__foot">
+      <button class="btn btn--primary" type="submit" data-magnetic>Send message <span aria-hidden="true">→</span></button>
+      <p class="form__note dim" data-form-note>Opens your email app with everything filled in.</p>
+    </div>
+  </form>
+</section>

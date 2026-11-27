@@ -1,13 +1,13 @@
 ---
 title: Designing interfaces for things that are sometimes wrong
 date: 2026-09-18
-summary: Confidence scores don't work. Here's what we've seen work instead, across a dozen AI products and a lot of user testing.
+summary: Confidence scores don't work. Here's what I've seen work instead, across a dozen AI products and a lot of user testing.
 tags: [Design, UX]
 ---
 
 Traditional software is deterministic: the same click produces the same result. AI features break that contract, and most interfaces haven't caught up. They present probabilistic output with the same visual certainty as a bank balance.
 
-Over the last few years we've tested a lot of ways to communicate uncertainty. Here's what we've learned.
+Over the last few years I've tested a lot of ways to communicate uncertainty. Here's what I've learned.
 
 ## Percentages are mostly noise
 

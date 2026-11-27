@@ -17,11 +17,11 @@ metrics: [320ms|median voice response, 2.3×|speaking time per session, 87%|week
 
 ## The brief
 
-Lumen wanted to know whether a voice-first tutor could get shy learners speaking more. We had six weeks to find out with real students.
+Lumen wanted to know whether a voice-first tutor could get shy learners speaking more. I had six weeks to find out with real students.
 
 ## Turn-taking is the product
 
-Latency gets the headlines, but the real challenge was *turn-taking*: knowing whether a learner has finished their sentence or is searching for a word. We tuned end-of-speech detection per proficiency level — beginners get far more patience.
+Latency gets the headlines, but the real challenge was *turn-taking*: knowing whether a learner has finished their sentence or is searching for a word. I tuned end-of-speech detection per proficiency level — beginners get far more patience.
 
 Corrections are deferred to natural pauses and phrased as recasts ("Ah, you *went* to the market — what did you buy?") rather than interruptions.
 

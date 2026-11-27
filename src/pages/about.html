@@ -1,93 +1,68 @@
 ---
 title: About
-description: Who we are, how we work, what we're good at — the short version for recruiters and the long version for everyone else.
+description: Michael Lin is a forward deployed engineer who embeds with customers and ships AI systems that hold up in production.
 ---
 <section class="page-hero container">
   <p class="eyebrow">About</p>
-  <h1 class="display">Small studio.<br><em>Senior</em> hands.</h1>
-  <p class="lede">{{name}} is an independent studio at the seam of design and machine learning. We’ve spent the last decade shipping products where models meet people — and learning, often the hard way, what makes them work.</p>
+  <h1 class="display">Half engineer,<br>half <em>translator.</em></h1>
+  <p class="lede">I’m {{name}}, a forward deployed engineer. I sit between frontier AI and the people who need it to work on Monday morning. I learn their workflow, find the problem worth solving, and ship the code myself.</p>
 </section>
 
 <section class="container tldr-wrap">
   <div class="tldr reveal" aria-labelledby="tldr-title">
     <div class="tldr__head">
-      <p class="eyebrow" id="tldr-title">TL;DR — for recruiters &amp; hiring managers</p>
+      <p class="eyebrow" id="tldr-title">TL;DR for recruiters &amp; hiring managers</p>
       <span class="pill"><span class="status-dot" aria-hidden="true"></span>{{availability}}</span>
     </div>
     <dl class="tldr__grid">
-      <div><dt>What we do</dt><dd>End-to-end AI product work: discovery, interface design, LLM/agent engineering, evaluation.</dd></div>
-      <div><dt>Core stack</dt><dd>TypeScript, Python, React/Next.js, PyTorch, Postgres + pgvector, Claude &amp; open-weight models.</dd></div>
-      <div><dt>Open to</dt><dd>Project engagements, fractional lead roles, advisory, and the right full-time conversation.</dd></div>
-      <div><dt>Based</dt><dd>{{location}} — overlap with US &amp; EU hours.</dd></div>
+      <div><dt>Role</dt><dd>Forward Deployed Engineer: customer-facing, hands-on keyboard, owns delivery end to end.</dd></div>
+      <div><dt>Core stack</dt><dd>Python, TypeScript, React, Postgres + pgvector, LLM APIs, agents &amp; tool use, evals.</dd></div>
+      <div><dt>Looking for</dt><dd>A full-time FDE or applied AI engineering role on a team shipping to real customers.</dd></div>
+      <div><dt>Based</dt><dd>{{location}}. Happy to travel to customer sites.</dd></div>
     </dl>
     <div class="tldr__actions">
-      <a class="btn btn--primary" href="mailto:{{email}}?subject=CV%20request">Request a CV</a>
+      <a class="btn btn--primary" href="{{base}}resume/">View résumé</a>
       <a class="btn btn--ghost" href="{{base}}work/">Jump to case studies</a>
     </div>
   </div>
 </section>
 
 <section class="container split">
-  <div class="split__label"><p class="eyebrow">Principles</p></div>
-  <ol class="principles">
-    <li class="reveal"><h3>Evals before vibes.</h3><p>If we can’t measure “better,” we can’t ship it. Every project starts with a test set, not a demo.</p></li>
-    <li class="reveal"><h3>The interface is the model.</h3><p>Users experience latency, uncertainty and failure modes — not parameters. We design for all three.</p></li>
-    <li class="reveal"><h3>Boring infrastructure, bold product.</h3><p>Novelty where it matters to users; proven tools everywhere else.</p></li>
-    <li class="reveal"><h3>Leave it better than we found it.</h3><p>Documented, tested, and handed over so your team owns it the day we leave.</p></li>
-  </ol>
-</section>
-
-<section class="container split">
-  <div class="split__label"><p class="eyebrow">The team</p></div>
-  <div class="team">
-    <article class="person reveal">
-      <div class="person__photo" style="--c1:#ff6a3d;--c2:#7b5cff" aria-hidden="true"><span>A</span></div>
-      <h3>Alex Rowan</h3>
-      <p class="dim">Founder · Design &amp; Engineering</p>
-      <p>Previously led product design for ML platforms; writes TypeScript, sketches in Figma, argues about loading states.</p>
-    </article>
-    <article class="person reveal">
-      <div class="person__photo" style="--c1:#16c2a3;--c2:#2f6bff" aria-hidden="true"><span>S</span></div>
-      <h3>Sam Okafor</h3>
-      <p class="dim">Partner · ML Engineering</p>
-      <p>Ex-research engineer. Builds retrieval systems, eval harnesses and the occasional fine-tune — only when prompting won’t cut it.</p>
-    </article>
-    <article class="person person--join reveal">
-      <div class="person__photo" aria-hidden="true"><span>+</span></div>
-      <h3>Trusted network</h3>
-      <p class="dim">Collaborators on demand</p>
-      <p>Hand-picked specialists in data, security and brand we bring in when a project needs them.</p>
-    </article>
+  <div class="split__label"><p class="eyebrow">The short story</p></div>
+  <div class="prose">
+    <p>I started out as a software engineer who kept ending up in customer meetings. Somewhere along the way I noticed that the hardest part of shipping AI wasn’t the model. It was everything around it: messy data, unwritten workflows, the integration nobody scoped, and the person who has to trust the output enough to act on it.</p>
+    <p>Forward deployed engineering is the job that owns all of that. I scope with the customer, prototype on their real data within days, harden it into production, and stay close enough to see whether it actually gets used. Then I bring what I learned back to the product team so the next deployment is easier.</p>
+    <p>Outside of work I write about what I’m learning, tinker on open-source eval tooling, and overthink loading states.</p>
   </div>
 </section>
 
 <section class="container split">
-  <div class="split__label"><p class="eyebrow">Experience</p></div>
-  <ol class="timeline">
-    <li class="reveal"><span class="mono dim">2023 — Now</span><div><h3>{{name}}</h3><p>Independent studio. AI products for startups and product teams in health, finance and developer tools.</p></div></li>
-    <li class="reveal"><span class="mono dim">2020 — 2023</span><div><h3>Lead, Applied ML Product</h3><p>Built and scaled a team shipping recommendation and language features to millions of users.</p></div></li>
-    <li class="reveal"><span class="mono dim">2017 — 2020</span><div><h3>Senior Design Engineer</h3><p>Design systems and data-heavy interfaces; first production ML features.</p></div></li>
-    <li class="reveal"><span class="mono dim">Earlier</span><div><h3>Research &amp; freelance</h3><p>HCI research, agency work, and far too many side projects.</p></div></li>
+  <div class="split__label"><p class="eyebrow">How I work</p></div>
+  <ol class="principles">
+    <li class="reveal"><h3>Start in the customer’s chair.</h3><p>Before writing code I shadow the workflow. The real requirements are rarely in the ticket.</p></li>
+    <li class="reveal"><h3>Evals before vibes.</h3><p>If I can’t measure “better,” I can’t ship it. Every deployment starts with a test set, not a demo.</p></li>
+    <li class="reveal"><h3>Prototype in days.</h3><p>A rough thing on real data beats a polished plan. Feedback early, polish later.</p></li>
+    <li class="reveal"><h3>Leave it owned.</h3><p>Documented, tested and handed over, so the customer’s team can run it without me.</p></li>
   </ol>
 </section>
 
 <section class="container split">
   <div class="split__label"><p class="eyebrow">Toolbox</p></div>
   <div class="toolbox">
-    <div class="reveal"><h3>Engineering</h3><ul class="tags"><li>TypeScript</li><li>Python</li><li>React</li><li>Next.js</li><li>Node</li><li>FastAPI</li><li>Postgres</li><li>pgvector</li><li>Redis</li></ul></div>
-    <div class="reveal"><h3>Machine learning</h3><ul class="tags"><li>LLM APIs</li><li>Agents &amp; tool use</li><li>RAG</li><li>Embeddings</li><li>PyTorch</li><li>Fine-tuning</li><li>Evals</li></ul></div>
-    <div class="reveal"><h3>Design</h3><ul class="tags"><li>Figma</li><li>Prototyping</li><li>Design systems</li><li>User research</li><li>Motion</li><li>WebGL</li></ul></div>
-    <div class="reveal"><h3>Delivery</h3><ul class="tags"><li>Vercel</li><li>AWS</li><li>GCP</li><li>Docker</li><li>CI/CD</li><li>Observability</li></ul></div>
+    <div class="reveal"><h3>Engineering</h3><ul class="tags"><li>Python</li><li>TypeScript</li><li>React</li><li>Next.js</li><li>FastAPI</li><li>Node</li><li>Postgres</li><li>pgvector</li><li>Redis</li></ul></div>
+    <div class="reveal"><h3>Applied AI</h3><ul class="tags"><li>LLM APIs</li><li>Agents &amp; tool use</li><li>MCP</li><li>RAG</li><li>Embeddings</li><li>Evals</li><li>Fine-tuning</li></ul></div>
+    <div class="reveal"><h3>Deployment</h3><ul class="tags"><li>AWS</li><li>GCP</li><li>Docker</li><li>Kubernetes</li><li>Terraform</li><li>CI/CD</li><li>Observability</li></ul></div>
+    <div class="reveal"><h3>Customer-facing</h3><ul class="tags"><li>Discovery</li><li>Scoping</li><li>Technical demos</li><li>Workshops</li><li>Security reviews</li><li>Stakeholder updates</li></ul></div>
   </div>
 </section>
 
 <section class="container quotes" aria-label="What people say">
   <figure class="quote reveal">
-    <blockquote>“They found the one feature that mattered, cut three that didn’t, and shipped it with an eval suite our team still runs every day.”</blockquote>
-    <figcaption><strong>Head of Product</strong><span class="dim">Series B health-tech company</span></figcaption>
+    <blockquote>“Michael was the reason our pilot turned into a contract. He understood our nurses’ workflow better than some of our own PMs.”</blockquote>
+    <figcaption><strong>VP of Operations</strong><span class="dim">Healthcare customer</span></figcaption>
   </figure>
   <figure class="quote reveal">
-    <blockquote>“Rare combination: they can debate retrieval strategies with our ML lead and then go make the UI genuinely delightful.”</blockquote>
-    <figcaption><strong>CTO</strong><span class="dim">Developer-tools startup</span></figcaption>
+    <blockquote>“The rare engineer who can run a customer workshop in the morning and push a production fix that afternoon.”</blockquote>
+    <figcaption><strong>Engineering Manager</strong><span class="dim">Former team</span></figcaption>
   </figure>
 </section>

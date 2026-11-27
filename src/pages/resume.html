@@ -1,0 +1,81 @@
+---
+title: Résumé
+description: Résumé of Michael Lin, forward deployed engineer. Experience, selected projects, skills and education.
+bodyClass: page-resume
+---
+<section class="page-hero container resume-hero">
+  <p class="eyebrow">Résumé</p>
+  <h1 class="display">{{name}}</h1>
+  <p class="lede">{{tagline}}. I embed with customers, scope the problem worth solving, and ship AI systems into production, from first workshop to on-call.</p>
+  <div class="resume-contact">
+    <a href="mailto:{{email}}">{{email}}</a>
+    <span class="dim">{{location}}</span>
+    <a href="https://github.com/mykolyn" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+  <div class="hero__actions no-print">
+    <button class="btn btn--primary" type="button" data-print>Save as PDF</button>
+    <a class="btn btn--ghost" href="{{base}}contact/">Get in touch</a>
+  </div>
+</section>
+
+<section class="container split">
+  <div class="split__label"><p class="eyebrow">Experience</p></div>
+  <ol class="cv">
+    <li class="cv__item reveal">
+      <div class="cv__head"><h3>Forward Deployed Engineer</h3><span class="mono dim">2024 — Present</span></div>
+      <p class="cv__org">Applied AI company</p>
+      <ul>
+        <li>Led technical delivery for enterprise customers in healthcare, finance and logistics, from discovery workshops to production rollout.</li>
+        <li>Shipped a clinical triage copilot that cut nurse handling time 41% with 0.94 agreement against senior nurses.</li>
+        <li>Built reusable eval harnesses and deployment templates now used across the FDE team, cutting time-to-first-prototype to about 5 days.</li>
+      </ul>
+    </li>
+    <li class="cv__item reveal">
+      <div class="cv__head"><h3>Software Engineer, Solutions</h3><span class="mono dim">2022 — 2024</span></div>
+      <p class="cv__org">B2B SaaS platform</p>
+      <ul>
+        <li>Owned integrations for strategic accounts: SSO, data pipelines and custom APIs across 20+ enterprise environments.</li>
+        <li>Prototyped the company’s first LLM feature (semantic search over customer documents), which became a core product line.</li>
+      </ul>
+    </li>
+    <li class="cv__item reveal">
+      <div class="cv__head"><h3>Software Engineer</h3><span class="mono dim">2020 — 2022</span></div>
+      <p class="cv__org">Early-stage startup</p>
+      <ul>
+        <li>Full-stack engineer on a five-person team. Built the web app, billing and internal tooling in TypeScript and Python.</li>
+      </ul>
+    </li>
+  </ol>
+</section>
+
+<section class="container split">
+  <div class="split__label"><p class="eyebrow">Selected work</p></div>
+  <ul class="cv-projects">
+    <li class="reveal"><a href="{{base}}work/triage-copilot/"><strong>Triage Copilot</strong><span class="dim">Agentic intake assistant for a nurse line. −41% handling time.</span><span aria-hidden="true">→</span></a></li>
+    <li class="reveal"><a href="{{base}}work/atlas-search/"><strong>Atlas Search</strong><span class="dim">Hybrid retrieval over 14k hours of interviews. nDCG 0.52 → 0.81.</span><span aria-hidden="true">→</span></a></li>
+    <li class="reveal"><a href="{{base}}work/ledger-agent/"><strong>Ledger Agent</strong><span class="dim">Reconciliation agent with human approval. 72% of matches automated.</span><span aria-hidden="true">→</span></a></li>
+    <li class="reveal"><a href="{{base}}work/signal-studio/"><strong>Signal Studio</strong><span class="dim">Open-source prompt and eval workbench.</span><span aria-hidden="true">→</span></a></li>
+  </ul>
+</section>
+
+<section class="container split">
+  <div class="split__label"><p class="eyebrow">Skills</p></div>
+  <dl class="cv-skills">
+    <div class="reveal"><dt>Languages</dt><dd>Python, TypeScript, SQL, Bash</dd></div>
+    <div class="reveal"><dt>Applied AI</dt><dd>LLM APIs, agents &amp; tool use, MCP, RAG, embeddings, evals, fine-tuning</dd></div>
+    <div class="reveal"><dt>Platform</dt><dd>React, Next.js, FastAPI, Postgres, pgvector, Redis, Temporal</dd></div>
+    <div class="reveal"><dt>Infra</dt><dd>AWS, GCP, Docker, Kubernetes, Terraform, OpenTelemetry</dd></div>
+    <div class="reveal"><dt>Customer</dt><dd>Discovery, scoping, technical workshops, executive updates, security reviews</dd></div>
+  </dl>
+</section>
+
+<section class="container split">
+  <div class="split__label"><p class="eyebrow">Education</p></div>
+  <ol class="cv">
+    <li class="cv__item reveal">
+      <div class="cv__head"><h3>B.S. Computer Science</h3><span class="mono dim">2016 — 2020</span></div>
+      <p class="cv__org">University</p>
+    </li>
+  </ol>
+</section>

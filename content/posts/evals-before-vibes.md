@@ -1,7 +1,7 @@
 ---
 title: Evals before vibes
 date: 2026-11-04
-summary: Why every AI project we take on starts with a spreadsheet of 50 examples — and how that spreadsheet quietly becomes the most valuable asset in the codebase.
+summary: Why every AI project I take on starts with a spreadsheet of 50 examples — and how that spreadsheet quietly becomes the most valuable asset in the codebase.
 tags: [Evals, Process]
 ---
 
@@ -11,7 +11,7 @@ A single great output tells you the system *can* work. It tells you nothing abou
 
 ## Start with fifty examples
 
-Before we write a prompt, we write a test set. Not a thousand examples — fifty is plenty to start. Real inputs, from real users or the closest thing you have, each with a note on what a good answer looks like.
+Before I write a prompt, I write a test set. Not a thousand examples — fifty is plenty to start. Real inputs, from real users or the closest thing you have, each with a note on what a good answer looks like.
 
 This is unglamorous work and it pays for itself almost immediately:
 
@@ -43,6 +43,6 @@ An eval suite that someone runs manually "before a big change" will be run twice
 
 Once it's automated, something nice happens: people start *adding* to it. Every bug report becomes a new test case. Six months later, the eval set is the single best description of what your product is supposed to do.
 
-## What we'd tell you on day one
+## What I'd tell you on day one
 
 If you only take one thing from this: write down fifty examples before you write a prompt. Everything else gets easier from there.
